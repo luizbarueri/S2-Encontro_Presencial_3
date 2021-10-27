@@ -1,0 +1,25 @@
+* {
+    margin: 10px;
+}
+#principal {
+    background-color: chocolate;
+}
+
+#cubic-bezier {
+    margin-top: 5px;
+    width: 100px;
+    height: 100px;
+    background: turquoise;
+    transition: width 1s;
+    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+}
+
+#cubic-bezier:hover {
+    width:300px;
+}
+
+#jqyery {
+    width: 500px;
+    height: 100px;
+    background-color: burlywood;
+}

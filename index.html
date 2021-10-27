@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/principal.js"></script>
+    <!--JQUERY-->
+   
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <title>Aula JQUERY</title>
+</head>
+<body>
+    <div id="principal">
+        <header>
+            <fieldset>
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="sobre.html">Sobre</a>
+                </nav>
+            </fieldset>
+        </header>
+        <section>
+            <div id='jqyery' onclick="SumirTexto()">
+                <h1>Clique aqui para Sumir o texto - jquery</h1>
+                <h2>Eu voltei...</h2>
+            </div>
+            <article>
+                <fieldset>
+                    <input type="button" id="bt-Teste" onclick="TestaMsg()" value="Clique aqui"></button>
+                </fieldset>
+                <div id="cubic-bezier">
+                    <p  style="text-align: center;">Mova o mouse aqui</p> 
+                </div>
+            </article>
+            <br><hr>
+            <div>
+                <p>Clique no botão para mudar a cor do background da tag <code>body</code>.</p>
+                <button>Mudar a cor do fundo</button>
+                <script>
+                    var btn = document.querySelector('button');
+                
+                    function random(number){
+                        return Math.floor(Math.random()*(number+1));
+                    }
+                
+                    btn.onclick = function (){
+                    var rndCol = 'rgb('+ random(255)+','+random(255)+','+random(255)+')';
+                        document.body.style.backgroundColor = rndCol;
+                    }
+                </script>
+            </div>
+        </section>
+        <footer>
+            <div>Desenvilvido por: Luiz Amaro</div>
+            <div>SENAI - 2021</div>
+        </footer>
+    </div>
+</body>
+</html>
